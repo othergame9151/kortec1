@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kortec Automotive - Trusted mechanic in Strathfield South & Inner West Sydney. Expert service for luxury cars, performance vehicles, 4x4s & daily drivers. 4.7★ rating, 129+ reviews.">
+    <meta name="keywords" content="mechanic Strathfield South, automotive repairs Inner West Sydney, performance car mechanic Sydney, trusted local mechanic Strathfield, car service Sydney">
+    
+    <meta property="og:title" content="Kortec Automotive - Trusted Mechanic Strathfield South & Inner West Sydney">
+    <meta property="og:description" content="Expert automotive service for all vehicle types. 4.7★ Google rating. Luxury cars, performance vehicles, 4x4s, family cars & classics.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kortecautomotive.com.au">
+    
+    <title>Kortec Automotive - Trusted Mechanic Strathfield South & Inner West Sydney</title>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutomotiveBusiness",
+      "name": "Kortec Automotive",
+      "image": "https://kortecautomotive.com.au/assets/images/workshop.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "14 Gould St",
+        "addressLocality": "Strathfield South",
+        "addressRegion": "NSW",
+        "postalCode": "2136",
+        "addressCountry": "AU"
+      },
+      "telephone": "0416620198",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "129"
+      },
+      "priceRange": "$$",
+      "areaServed": ["Strathfield South", "Inner West Sydney", "Parramatta", "Canterbury-Bankstown"]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #c41e3a;
+            --primary-dark: #8b1428;
+            --accent-gold: #d4af37;
+            --secondary-color: #0a0a0a;
+            --dark-bg: #121212;
+            --darker-bg: #0a0a0a;
+            --text-dark: #e8e8e8;
+            --text-muted: #a0a0a0;
+            --text-light: #666666;
+            --background: #ffffff;
+            --background-alt: #f8f8f8;
+            --border-color: #2a2a2a;
+            --card-bg: #1a1a1a;
+            --success: #2e7d32;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c2c2c;
+            background: var(--background);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 16px 36px;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 16px rgba(196, 30, 58, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(196, 30, 58, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #2c2c2c;
+            border: 2px solid #2c2c2c;
+        }
+        
+        .btn-secondary:hover {
+            background: #2c2c2c;
+            color: white;
+        }
+        
+        .btn-white {
+            background: white;
+            color: #2c2c2c;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .btn-white:hover {
+            background: rgba(255,255,255,0.9);
+            transform: translateY(-2px);
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--secondary-color);
+            letter-spacing: -0.5px;
+        }
+        
+        .logo span {
+            color: var(--primary-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 36px;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 15px;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .nav-cta {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .phone-cta {
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .phone-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: #2c2c2c;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.92), rgba(18, 18, 18, 0.85)), url('./assets/images/hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 140px 0 100px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at top right, rgba(196, 30, 58, 0.15), transparent 60%);
+            pointer-events: none;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: #d0d0d0;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .trust-bar {
+            background: linear-gradient(135deg, var(--darker-bg), var(--dark-bg));
+            color: white;
+            padding: 28px 0;
+            border-bottom: 1px solid rgba(196, 30, 58, 0.3);
+        }
+        
+        .trust-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        
+        .trust-icon {
+            width: 24px;
+            height: 24px;
+            fill: var(--accent-gold);
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .stars {
+            color: var(--accent-gold);
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        
+        section {
+            padding: 100px 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        
+        .section-header h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+        
+        .section-header p {
+            font-size: 18px;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 28px;
+        }
+        
+        .service-card {
+            background: white;
+            border: 1px solid #e8e8e8;
+            border-radius: 4px;
+            padding: 40px 32px;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background: var(--primary-color);
+            transition: height 0.4s ease;
+        }
+        
+        .service-card:hover::before {
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+            border-color: rgba(196, 30, 58, 0.3);
+        }
+        
+        .service-icon {
+            width: 56px;
+            height: 56px;
+            margin-bottom: 24px;
+            fill: var(--primary-color);
+        }
+        
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: 16px;
+            color: var(--secondary-color);
+            font-weight: 700;
+        }
+        
+        .service-card p {
+            color: var(--text-light);
+            margin-bottom: 24px;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        
+        .why-choose {
+            background: linear-gradient(135deg, var(--darker-bg), var(--dark-bg));
+            color: var(--text-dark);
+        }
+        
+        .why-choose .section-header h2 {
+            color: white;
+        }
+        
+        .why-choose .section-header p {
+            color: var(--text-muted);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 48px;
+        }
+        
+        .feature {
+            text-align: center;
+        }
+        
+        .feature-icon {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            box-shadow: 0 8px 24px rgba(196, 30, 58, 0.3);
+        }
+        
+        .feature-icon svg {
+            width: 42px;
+            height: 42px;
+            fill: white;
+        }
+        
+        .feature h3 {
+            font-size: 22px;
+            margin-bottom: 16px;
+            color: white;
+            font-weight: 700;
+        }
+        
+        .feature p {
+            color: var(--text-muted);
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        
+        .vehicles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 24px;
+        }
+        
+        .vehicle-card {
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            height: 320px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+        
+        .vehicle-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+            filter: brightness(0.85);
+        }
+        
+        .vehicle-card:hover img {
+            transform: scale(1.08);
+            filter: brightness(0.7);
+        }
+        
+        .vehicle-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.95), transparent);
+            padding: 32px;
+            color: white;
+        }
+        
+        .vehicle-overlay h3 {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        
+        .about-image {
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+        }
+        
+        .about-text h2 {
+            font-size: 42px;
+            margin-bottom: 28px;
+            color: var(--secondary-color);
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+        
+        .about-text p {
+            font-size: 16px;
+            color: var(--text-light);
+            margin-bottom: 24px;
+            line-height: 1.9;
+        }
+        
+        .testimonials {
+            background: var(--background-alt);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 28px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 36px;
+            border-radius: 4px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            border-left: 4px solid var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-name {
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--secondary-color);
+        }
+        
+        .testimonial-stars {
+            color: var(--accent-gold);
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+        
+        .testimonial-text {
+            color: var(--text-light);
+            line-height: 1.9;
+            font-size: 15px;
+        }
+        
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+        }
+        
+        .location-info h2 {
+            font-size: 42px;
+            margin-bottom: 40px;
+            color: var(--secondary-color);
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+        
+        .info-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+        
+        .info-icon {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .info-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+        
+        .info-content h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+            font-weight: 700;
+        }
+        
+        .info-content p {
+            color: var(--text-light);
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        
+        .info-content a {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .map-container {
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+            height: 500px;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        .contact-form {
+            background: linear-gradient(135deg, var(--darker-bg), var(--dark-bg));
+        }
+        
+        .contact-form .section-header h2 {
+            color: white;
+        }
+        
+        .contact-form .section-header p {
+            color: var(--text-muted);
+        }
+        
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 56px;
+            border-radius: 4px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .form-group {
+            margin-bottom: 28px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: var(--secondary-color);
+            font-size: 15px;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid #e8e8e8;
+            border-radius: 2px;
+            font-size: 16px;
+            font-family: inherit;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 4px rgba(196, 30, 58, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 160px;
+        }
+        
+        .g-recaptcha {
+            margin-bottom: 28px;
+        }
+        
+        .form-submit {
+            width: 100%;
+            font-size: 17px;
+        }
+        
+        footer {
+            background: var(--darker-bg);
+            color: var(--text-muted);
+            padding: 80px 0 32px;
+            border-top: 1px solid rgba(196, 30, 58, 0.2);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 56px;
+            margin-bottom: 48px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 24px;
+            font-size: 20px;
+            color: white;
+            font-weight: 700;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: var(--text-muted);
+            line-height: 1.9;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+        
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                padding: 32px 24px;
+                box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+                transition: left 0.3s;
+                align-items: flex-start;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+            
+            .nav-cta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                width: 100%;
+            }
+            
+            .hero {
+                padding: 100px 0 70px;
+                background-attachment: scroll;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 17px;
+            }
+            
+            .trust-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .about-content,
+            .location-content {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+            
+            .section-header h2,
+            .about-text h2,
+            .location-info h2 {
+                font-size: 32px;
+            }
+            
+            .form-container {
+                padding: 40px 28px;
+            }
+            
+            .vehicles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            section {
+                padding: 70px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">KORTEC <span>AUTOMOTIVE</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#vehicles">Vehicles</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="nav-cta">
+                    <a href="tel:0416620198" class="phone-cta">
+                        <svg class="phone-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        0416 620 198
+                    </a>
+                    <a href="#contact" class="btn btn-primary">Book Service</a>
+                </div>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Trusted Automotive Service in Strathfield South</h1>
+            <p>Expert mechanical repairs and servicing for luxury vehicles, performance cars, 4x4s, family cars, and classics. Honest advice, quality workmanship, attention to detail.</p>
+            <div class="hero-cta">
+                <a href="tel:0416620198" class="btn btn-primary">Call Now: 0416 620 198</a>
+                <a href="#contact" class="btn btn-white">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="trust-bar">
+        <div class="container">
+            <div class="trust-content">
+                <div class="trust-item rating">
+                    <span class="stars">★★★★★</span>
+                    <span>4.7 Google Rating</span>
+                </div>
+                <div class="trust-item">
+                    <svg class="trust-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <span>129+ Reviews</span>
+                </div>
+                <div class="trust-item">
+                    <svg class="trust-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <span>Servicing Strathfield South & Inner West</span>
+                </div>
+                <div class="trust-item">
+                    <svg class="trust-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <span>Trusted by Local Drivers</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive automotive care for all vehicle types. From routine servicing to complex repairs, we've got you covered.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+                    <h3>General Mechanical Repairs</h3>
+                    <p>Complete mechanical repairs and maintenance for all makes and models. We diagnose and fix issues efficiently with quality parts.</p>
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                    <h3>Logbook Servicing</h3>
+                    <p>Manufacturer-compliant logbook servicing to maintain your warranty. Transparent pricing and genuine quality parts.</p>
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h3l-1 1v2h12v-2l-1-1h3c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 13H4V5h16v11z"/></svg>
+                    <h3>Advanced Diagnostics</h3>
+                    <p>State-of-the-art diagnostic equipment to quickly identify issues. We explain problems clearly before any work begins.</p>
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <h3>Brakes & Suspension</h3>
+                    <p>Expert brake repairs and suspension work. Ensuring your vehicle handles safely and smoothly on all roads.</p>
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                    <h3>Engine & Drivetrain</h3>
+                    <p>Comprehensive engine diagnostics and repairs. Transmission servicing and drivetrain maintenance by experienced technicians.</p>
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                    <h3>Performance & Sports Vehicles</h3>
+                    <p>Specialized service for performance and sports cars. We understand the unique needs of high-performance vehicles.</p>
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+                    <h3>4x4 Servicing & Repairs</h3>
+                    <p>Expert 4x4 and off-road vehicle maintenance. Suspension upgrades, drivetrain service, and adventure-ready preparation.</p>
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <h3>Luxury Vehicle Servicing</h3>
+                    <p>Premium care for luxury and prestige vehicles. Attention to detail and genuine parts for European and luxury brands.</p>
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                    <h3>Classic Car Care</h3>
+                    <p>Specialist service for classic and vintage vehicles. We treat your pride and joy with the respect it deserves.</p>
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Kortec Automotive</h2>
+                <p>We're not just another workshop. We're your trusted automotive partner in Strathfield South.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <h3>Proven Reputation</h3>
+                    <p>4.7 star rating from 129+ satisfied customers. Our reputation speaks for itself through genuine customer experiences.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                    </div>
+                    <h3>Attention to Detail</h3>
+                    <p>Every vehicle receives meticulous care. Clean, organized workshop with advanced equipment and professional standards.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 9h-2V5h2v6zm0 4h-2v-2h2v2z"/></svg>
+                    </div>
+                    <h3>We Always Ask First</h3>
+                    <p>Transparent communication before any work begins. No surprise charges, no unnecessary services. Clear explanations every time.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                    </div>
+                    <h3>Experienced Team</h3>
+                    <p>Led by Young and Kim, our skilled technicians have years of experience across all vehicle types and brands.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    </div>
+                    <h3>Quality Workmanship</h3>
+                    <p>Professional service that exceeds expectations. Efficient, reliable repairs using quality parts and proven techniques.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.9 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z"/></svg>
+                    </div>
+                    <h3>Comfortable Waiting Area</h3>
+                    <p>Watch your car being serviced from our upstairs lounge. Free snacks, coffee, drinks, and comfortable seating provided.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vehicles">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vehicles We Work On</h2>
+                <p>From everyday family cars to rare classics, we service them all with the same commitment to excellence.</p>
+            </div>
+            <div class="vehicles-grid">
+                <div class="vehicle-card">
+                    <img src="./assets/images/luxury-vehicles.jpg" alt="Luxury vehicles including Mercedes, BMW, Audi, Lexus serviced at Kortec Automotive Strathfield">
+                    <div class="vehicle-overlay">
+                        <h3>Luxury Vehicles</h3>
+                    </div>
+                </div>
+                <div class="vehicle-card">
+                    <img src="./assets/images/performance-sports-cars.jpg" alt="Performance and sports car servicing Sydney Inner West including Porsche, BMW M, AMG">
+                    <div class="vehicle-overlay">
+                        <h3>Performance & Sports Cars</h3>
+                    </div>
+                </div>
+                <div class="vehicle-card">
+                    <img src="./assets/images/4x4-offroad.jpg" alt="4x4 and off-road vehicle repairs Strathfield South including Toyota, Nissan, Ford">
+                    <div class="vehicle-overlay">
+                        <h3>4x4 & Off-Road</h3>
+                    </div>
+                </div>
+                <div class="vehicle-card">
+                    <img src="./assets/images/family-vehicles.jpg" alt="Family car servicing Inner West Sydney - reliable maintenance for daily drivers">
+                    <div class="vehicle-overlay">
+                        <h3>Family Vehicles</h3>
+                    </div>
+                </div>
+                <div class="vehicle-card">
+                    <img src="./assets/images/classic-cars.jpg" alt="Classic car restoration and servicing specialist Strathfield NSW">
+                    <div class="vehicle-overlay">
+                        <h3>Classic Cars</h3>
+                    </div>
+                </div>
+                <div class="vehicle-card">
+                    <img src="./assets/images/daily-drivers.jpg" alt="Everyday vehicle repairs and logbook servicing near Parramatta">
+                    <div class="vehicle-overlay">
+                        <h3>Daily Drivers</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./assets/images/workshop-interior.jpg" alt="Kortec Automotive workshop interior - clean modern automotive repair facility Strathfield South">
+                </div>
+                <div class="about-text">
+                    <h2>About Kortec Automotive</h2>
+                    <p>Located in Strathfield South, Kortec Automotive has built a reputation as one of the Inner West's most trusted mechanical workshops. Led by Young and Kim, our team brings years of hands-on experience to every job, whether it's a routine service or a complex repair.</p>
+                    <p>We're not the typical garage. Our clean, modern workshop features advanced diagnostic equipment and a comfortable customer lounge where you can watch your vehicle being serviced. We believe in transparency, honest communication, and quality workmanship that stands the test of time.</p>
+                    <p>From imported vehicles requiring blue slip inspections to high-performance sports cars needing expert care, we've seen it all. Our customers appreciate that we always explain what needs doing and why, with no surprises when it comes to pricing.</p>
+                    <p>Whether you drive a luxury European sedan, a family SUV, or a weekend track car, we treat every vehicle with the same level of professional care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Real reviews from real customers. See why drivers across the Inner West trust Kortec Automotive.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">Hao Ding</div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-text">This design perfectly captures Kortec's core promises. It immediately feels like a trustworthy and professional place for your car. Transparent, readable pricing and they always ask first. Clean, professional design with clear calls to action. Highly recommend.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">John ZH</div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-text">Highly recommend this mechanic. Young and his wife Kim are amazing, fair price and amazing service, no communication problem. Do not need to worry they will lie or scam at all. And you can surprisingly find snack and coffee in the waiting room.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">ALPHa RoMeO</div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-text">Great mechanic! Team are very friendly and really easy to deal with. They were so accommodating and managed to find and fix a suspension problem like magic. Car feels so smooth now. Well priced, honest, fast and very informative - know what they're doing!</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">Sumi Kim</div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-text">I felt a great sense of trust since I could watch my car being serviced from the customer lounge upstairs. The owner's friendly explanations, reasonable prices, and the clean environment all added up to an excellent experience. I think I'll only come here from now on.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">Vincent Vu</div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-text">First time visiting Kortec Automotive, overall very impressed with service and results. This business goes above and beyond to ensure their customers are leaving satisfied. We were quoted $200 initially but ended up only paying $130. There is a lounge, waiting area, drinks. Highly recommend.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">Constante III Haloota</div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-text">The team, led by Mr. Yong, is very accommodating. We are delighted with the facility and highly recommend it. For those seeking a professional and reliable service for their vehicle near Parramatta, this is the perfect option. The facility offers snacks and a balcony view of your car.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">Min S</div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-text">Great and awesome place for your car! Reliable, kind and welcoming owner and staff! Extremely high quality service with affordable price! You won't waste even single penny! Customer waiting room also amazing as free drinks and snacks with cozy seat. Highly recommended!</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">Larissa Zhou</div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-text">Had a fantastic experience at KORTEC AUTOMOTIVE! From the moment I walked in, the staff was friendly, welcoming, and genuinely helpful. They took the time to explain everything clearly. The whole process was smooth, transparent, and completely stress-free. Highly recommend to anyone looking for great service!</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">Qiao Lin</div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-text">I recently imported my car from New Zealand and needed a blue slip inspection. Kim went above and beyond to help me. She worked with me to study the NSW Service documents and stayed in touch for months. I was very impressed by how clean and well-organized their workshop was. Their professionalism and dedication made the entire process smooth and stress-free.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-info">
+                    <h2>Visit Our Workshop</h2>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        </div>
+                        <div class="info-content">
+                            <h3>Address</h3>
+                            <p>14 Gould St<br>Strathfield South NSW 2136</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        </div>
+                        <div class="info-content">
+                            <h3>Opening Hours</h3>
+                            <p><strong>Monday – Friday:</strong> 9:00am – 5:00pm<br>
+                            <strong>Weekends:</strong> Closed<br>
+                            <em>Public holiday hours may vary</em></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        </div>
+                        <div class="info-content">
+                            <h3>Contact</h3>
+                            <p><strong>Phone:</strong> <a href="tel:0416620198">0416 620 198</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+                        </div>
+                        <div class="info-content">
+                            <h3>Service Areas</h3>
+                            <p>Strathfield South, Strathfield, Homebush, Burwood, Croydon, Enfield, Canterbury, Bankstown, Parramatta, and surrounding Inner West suburbs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.037296859282!2d151.0701015757095!3d-33.88869327321886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bb792b209c9f%3A0xfb75eef6fe897f2e!2sKORTEC%20AUTOMOTIVE!5e0!3m2!1sen!2sau!4v1766922316437!5m2!1sen!2sau" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-form">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to book your service? Fill out the form below and we'll get back to you promptly.</p>
+            </div>
+            <div class="form-container">
+                <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+                    <input type="hidden" name="subject" value="New Enquiry from Kortec Automotive Website">
+                    <input type="hidden" name="from_name" value="Kortec Automotive Website">
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required aria-required="true" placeholder="Tell us about your vehicle and what service you need..."></textarea>
+                    </div>
+                    
+                    <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY_HERE"></div>
+                    
+                    <button type="submit" class="btn btn-primary form-submit">Send Enquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kortec Automotive</h3>
+                    <p>Your trusted automotive service partner in Strathfield South and the Inner West. Expert care for all vehicle types with honest, transparent service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <p>Strathfield South</p>
+                    <p>Strathfield</p>
+                    <p>Homebush</p>
+                    <p>Burwood</p>
+                    <p>Parramatta</p>
+                    <p>Inner West Sydney</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#services">Our Services</a>
+                    <a href="#vehicles">Vehicles We Service</a>
+                    <a href="#about">About Us</a>
+                    <a href="#testimonials">Customer Reviews</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>14 Gould St<br>Strathfield South NSW 2136</p>
+                    <p><strong>Phone:</strong><br><a href="tel:0416620198">0416 620 198</a></p>
+                    <p><strong>Hours:</strong><br>Mon-Fri: 9:00am - 5:00pm<br>Weekends: Closed</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kortec Automotive. Providing trusted mechanical repairs and servicing in Strathfield South, Inner West Sydney. Specializing in luxury vehicles, performance cars, 4x4s, family cars, and classic vehicles. Professional automotive care with honest pricing and experienced technicians.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.textContent = '☰';
+            });
+        });
+        
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Form validation and submission
+        const form = document.getElementById('contactForm');
+        
+        form.addEventListener('submit', (e) => {
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            if (!name || !phone || !email || !message) {
+                e.preventDefault();
+                alert('Please fill in all required fields.');
+                return false;
+            }
+            
+            // Basic email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                e.preventDefault();
+                alert('Please enter a valid email address.');
+                return false;
+            }
+            
+            // Check if reCAPTCHA is completed
+            if (typeof grecaptcha !== 'undefined') {
+                const recaptchaResponse = grecaptcha.getResponse();
+                if (recaptchaResponse.length === 0) {
+                    e.preventDefault();
+                    alert('Please complete the reCAPTCHA verification.');
+                    return false;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
